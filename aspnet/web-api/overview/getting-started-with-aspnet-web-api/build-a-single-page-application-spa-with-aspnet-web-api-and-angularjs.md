@@ -332,7 +332,7 @@ Web API 框架是 ASP.NET 堆栈的一部分，旨在方便地实现 HTTP 服务
     [!code-javascript[Main](build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs/samples/sample17.js)]
 
     > [!NOTE]
-    > 构造函数的**QuizCtrl**控制器需要名为的注射参数 **$scope**。 作用域的初始状态应设置在构造函数中通过附加到属性 **$scope**对象。 属性包含**视图模型**，并可供模板时注册了该控制器。
+    > 构造函数的**QuizCtrl**控制器需要名为的注入参数 **$scope**。 作用域的初始状态应设置在构造函数中通过附加到属性 **$scope**对象。 属性包含**视图模型**，并可供模板时注册了该控制器。
     > 
     > **QuizCtrl**控制器定义在名为模块内**QuizApp**。 模块是工作的让你单元将应用程序分解为单独的组件。 使用模块的主要优势是易于理解的代码，并便于单元测试、 可重用性和可维护性。
 7. 若要对从视图触发的事件做出响应，现在将将行为添加到作用域。 将以下代码添加在结束**QuizCtrl**控制器定义**nextQuestion**函数中 **$scope**对象。
